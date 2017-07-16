@@ -1,7 +1,5 @@
 /*
  Name: Travis Neel
- Semester: MW19_Blue
- Topic: COSC 2436 Lab 4, implement and enhance a linked list
  */
 
 #include <iostream>
@@ -9,16 +7,7 @@
 #include <algorithm>
 using namespace std;
 
-/*
- Startup code for COSC2436, Lab 4, Instructor: Thayer
- This code compiles OK, but does not link, because
- many operations are not defined. Implement the class methods.
- This lab should be done in one file: DDHH_L4_Lastname.cpp.
- 
- Test code is provided in main. It is OK to add your own test code
- at the bottom. If you cannot get some things to work, then
- comment out the test code in main that does not work.
- */
+// Linked List Data Structure
 
 typedef char itemType;
 
@@ -34,7 +23,7 @@ public:
     }
     
     Node(){
-        payload='x';
+        payload='';
         next=nullptr;
     }
     
@@ -292,10 +281,6 @@ void List::remove(int pos){
 
 int main() { // main is done for you. You should not have to modify main.
     cout<<"COSC 2436 Lab 4\n";
-    
-    // If desired, you may add extra cout statements to better format the output.
-    // While developing class List and Stack, COMMENT OUT any test code you are not ready for!
-    
     // Test class List...
     cout<<"Testing class List\n";
     List listA, listB;
